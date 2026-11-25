@@ -2,30 +2,284 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fais</title>
-    <style>
-        body {
-            background: #101820;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        h1 {
-            color: #39ff14;
-            font-size: 38px;
-        }
-        p {
-            color: #cccccc;
-            font-size: 18px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fais Anang Prasetya | Veterinary Portfolio</title>
+<meta name="description" content="Portofolio profesional Fais Anang Prasetya di bidang kesehatan hewan.">
+<style>
+:root {
+  --bg:#080b16;
+  --panel:#11182a;
+  --text:#f5f7ff;
+  --muted:#a4aec5;
+  --blue:#48a9ff;
+  --purple:#a77bff;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,sans-serif;
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(8,11,22,.94);
+  border-bottom:1px solid #202a40;
+  backdrop-filter:blur(12px);
+}
+nav{
+  display:flex;justify-content:space-between;
+  align-items:center;padding:18px 0;
+}
+.logo{font-size:23px;font-weight:800;color:var(--blue)}
+.navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--blue)}
+.hero{
+  min-height:85vh;display:flex;
+  align-items:center;padding:90px 0;
+  background:radial-gradient(ellipse at 80% 30%,#242052 0%,transparent 50%);
+}
+.tag{
+  color:var(--blue);letter-spacing:3px;
+  font-size:12px;font-weight:bold;
+}
+.hero h1{
+  font-size:clamp(40px,7vw,75px);
+  line-height:1.13;margin:22px 0;
+}
+.gradient{
+  background:linear-gradient(90deg,var(--blue),var(--purple));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.hero p{max-width:650px;color:var(--muted);font-size:17px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{
+  padding:12px 22px;border-radius:9px;
+  background:linear-gradient(100deg,var(--blue),var(--purple));
+  color:white;font-weight:bold;font-size:14px;
+}
+.btn.outline{background:transparent;border:1px solid #53617e}
+section{padding:85px 0}
+.section-title{margin-bottom:38px}
+.section-title small{color:var(--blue);letter-spacing:3px}
+.section-title h2{font-size:35px;margin-top:8px}
+.section-title p{color:var(--muted);max-width:650px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{
+  background:var(--panel);padding:27px;
+  border:1px solid #27324a;border-radius:15px;
+  transition:.25s;
+}
+.card:hover{transform:translateY(-5px);border-color:var(--blue)}
+.card h3{color:var(--blue);margin-bottom:10px}
+.card p,.card li{color:var(--muted);font-size:14px}
+.card ul{padding-left:20px}
+.timeline{border-left:2px solid #384a70;padding-left:25px}
+.timeline-item{position:relative;margin-bottom:30px}
+.timeline-item:before{
+  content:"";position:absolute;left:-32px;top:8px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--blue);box-shadow:0 0 15px var(--blue);
+}
+.year{font-size:12px;color:var(--purple);font-weight:bold}
+.skills{display:flex;gap:12px;flex-wrap:wrap}
+.skill{
+  background:#18243b;border:1px solid #344866;
+  border-radius:30px;padding:9px 16px;
+  font-size:13px;color:#dce9ff;
+}
+.contact{text-align:center;background:linear-gradient(120deg,#11182a,#171432)}
+.contact p{color:var(--muted);margin:15px auto 25px;max-width:600px}
+footer{
+  text-align:center;padding:30px;
+  border-top:1px solid #202a40;color:var(--muted);
+  font-size:12px;
+}
+@media(max-width:700px){
+  .navlinks{gap:10px;font-size:10px}
+  .grid{grid-template-columns:1fr}
+  .hero{min-height:75vh}
+  section{padding:65px 0}
+  .section-title h2{font-size:29px}
+}
+</style>
 </head>
 <body>
-    <h1>Halo, saya Fais!</h1>
-    <p>Selamat datang di website portofolio saya.</p>
-    <p>Belajar, berkembang, dan berkarya.</p>
+
+<header>
+<div class="container">
+<nav>
+  <div class="logo">FAIS.</div>
+  <div class="navlinks">
+    <a href="#tentang">Profil</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#keahlian">Keahlian</a>
+  </div>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="hero">
+<div class="container">
+  <div class="tag">PERSONAL PORTFOLIO · 2026</div>
+  <h1>Fais Anang<br><span class="gradient">Prasetya.</span></h1>
+  <p>
+    Individu yang memiliki ketertarikan dalam bidang
+    kesehatan hewan, pelayanan klinik veteriner,
+    dan pengembangan ilmu kedokteran hewan.
+  </p>
+  <div class="buttons">
+    <a class="btn" href="#tentang">Kenali Saya</a>
+    <a class="btn outline" href="#pengalaman">Lihat Pengalaman</a>
+  </div>
+</div>
+</div>
+
+<section id="tentang">
+<div class="container">
+<div class="section-title">
+<small>01 — PROFIL</small>
+<h2>Tentang Saya</h2>
+<p>Mengenal latar belakang, minat, dan perjalanan saya.</p>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Perkenalan</h3>
+<p>
+Saya Fais Anang Prasetya, lulusan pendidikan
+vokasi bidang peternakan. Saya memiliki minat
+besar dalam dunia kesehatan hewan dan pelayanan
+medis veteriner.
+</p>
+</div>
+<div class="card">
+<h3>Visi Pribadi</h3>
+<p>
+Terus mengembangkan pengetahuan, keterampilan,
+dan pengalaman agar dapat memberikan kontribusi
+positif bagi kesejahteraan hewan.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pendidikan">
+<div class="container">
+<div class="section-title">
+<small>02 — PENDIDIKAN</small>
+<h2>Riwayat Pendidikan</h2>
+<p>Perjalanan pendidikan dan pembelajaran saya.</p>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="year">PENDIDIKAN DASAR</div>
+<h3>SDN 067093</h3>
+<p>Sekolah Dasar</p>
+</div>
+<div class="timeline-item">
+<div class="year">PENDIDIKAN MENENGAH PERTAMA</div>
+<h3>SMP Muhammadiyah 62</h3>
+<p>Sekolah Menengah Pertama</p>
+</div>
+<div class="timeline-item">
+<div class="year">PENDIDIKAN MENENGAH KEJURUAN</div>
+<h3>SMK SPP Snakma Muhammadiyah</h3>
+<p>Program Studi Agribisnis Ternak Ruminansia</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pengalaman">
+<div class="container">
+<div class="section-title">
+<small>03 — PENGALAMAN</small>
+<h2>Pengalaman Profesional</h2>
+<p>Pengalaman belajar dan bekerja di lingkungan pelayanan hewan.</p>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Pelayanan Klinik Hewan</h3>
+<p>
+Memiliki pengalaman bekerja di lingkungan klinik
+hewan serta mengenal alur pelayanan dan perawatan
+pasien veteriner.
+</p>
+</div>
+<div class="card">
+<h3>Penanganan Pasien</h3>
+<p>
+Mempelajari proses penanganan pasien hewan,
+pengamatan kondisi umum, dan membantu kegiatan
+perawatan sesuai arahan dokter hewan.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="keahlian">
+<div class="container">
+<div class="section-title">
+<small>04 — KOMPETENSI</small>
+<h2>Keahlian & Minat</h2>
+<p>Bidang yang menjadi fokus pembelajaran dan pengembangan diri.</p>
+</div>
+<div class="card">
+<div class="skills">
+<span class="skill">Animal Handling</span>
+<span class="skill">Animal Welfare</span>
+<span class="skill">Pet Care</span>
+<span class="skill">Kesehatan Hewan</span>
+<span class="skill">Peternakan Ruminansia</span>
+<span class="skill">Observasi Pasien</span>
+<span class="skill">Pelayanan Klinik</span>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<small>05 — TUJUAN</small>
+<h2>Perjalanan Selanjutnya</h2>
+</div>
+<div class="card">
+<h3>Terus Belajar dan Berkembang</h3>
+<p>
+Saya ingin terus memperdalam ilmu kesehatan hewan,
+meningkatkan kompetensi profesional, dan melanjutkan
+perjalanan di bidang kedokteran hewan.
+</p>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="container">
+<div class="section-title">
+<small>06 — PENUTUP</small>
+<h2>Mari Terhubung</h2>
+</div>
+<p>
+Terima kasih telah mengunjungi portofolio saya.
+Setiap pengalaman adalah kesempatan untuk belajar
+dan menjadi lebih baik.
+</p>
+</div>
+</section>
+</main>
+
+<footer>
+© 2026 Fais Anang Prasetya · Personal Portfolio
+</footer>
 </body>
 </html>
