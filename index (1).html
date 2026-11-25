@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portofolio Fais Anang Prasetya, paramedis klinik hewan dengan latar belakang Agribisnis Ternak Ruminansia.">
+<meta name="author" content="Fais Anang Prasetya">
+<meta name="theme-color" content="#0b1020">
+<title>Fais Anang Prasetya | Animal Care Portfolio</title>
+<style>
+:root{
+  --bg:#090d19;--panel:#11182b;--panel2:#151f36;--ink:#f4f6ff;
+  --muted:#a8b2ca;--line:#28334e;--violet:#9b8cff;--cyan:#59d8e8;
+  --pink:#ff83b5;--gold:#ffc978;--shadow:0 18px 55px #0007;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#25204b 0,transparent 34%),radial-gradient(ellipse at 0% 35%,#12334a 0,transparent 27%),var(--bg);color:var(--ink);font:16px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--cyan);text-decoration:none}
+a:hover{color:#fff}
+.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+.topbar{position:sticky;top:0;z-index:10;background:#090d19df;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff14}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-weight:850;letter-spacing:.02em}.brand span{color:var(--cyan)}
+nav{display:flex;gap:20px;overflow:auto;white-space:nowrap}
+nav a{font-size:.88rem;color:#c5cde0;font-weight:650}
+nav a:hover{color:var(--cyan)}
+.hero{padding:78px 0 62px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #9b8cff44;border-radius:50%;right:-100px;top:30px;box-shadow:0 0 0 35px #9b8cff0a,0 0 0 75px #59d8e80a;pointer-events:none}
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid #59d8e84d;background:#59d8e812;color:var(--cyan);padding:7px 13px;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+h1{font-size:clamp(2.6rem,8vw,5.5rem);line-height:1.02;letter-spacing:-.055em;margin:22px 0 16px;max-width:850px}
+.gradient{background:linear-gradient(100deg,#fff 5%,#a99cff 48%,#59d8e8 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c0c9dc;font-size:clamp(1rem,2.3vw,1.2rem);max-width:690px;margin:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:800;font-size:.92rem;border:1px solid #ffffff25}
+.btn.primary{background:linear-gradient(110deg,#8878ff,#43cddd);color:#09111e;border:0;box-shadow:0 8px 28px #5d9bff33}
+.btn.secondary{color:var(--ink);background:#ffffff08}
+.btn:hover{transform:translateY(-2px);transition:.2s}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.pill{font-size:.82rem;color:#d7def0;background:#ffffff0a;border:1px solid #ffffff17;border-radius:999px;padding:7px 12px}
+.pill b{color:var(--gold)}
+main{padding:12px 0 70px}
+.section{margin:0 0 24px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 15px}
+.section-head h2{font-size:1.55rem;letter-spacing:-.025em;margin:0}
+.section-head p{margin:0;color:var(--muted);font-size:.88rem}
+.card{background:linear-gradient(145deg,#151e34ee,#0f1729ee);border:1px solid #ffffff16;border-radius:20px;padding:25px;box-shadow:var(--shadow)}
+.card p{color:#c3cce0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.item{position:relative;background:linear-gradient(145deg,#17223a,#11182a);border:1px solid #ffffff14;border-radius:17px;padding:19px;overflow:hidden}
+.item:before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:linear-gradient(var(--violet),var(--cyan))}
+.item h3{font-size:1.02rem;line-height:1.4;margin:0 0 7px}
+.item p{color:#b7c2d8;margin:8px 0 0;font-size:.94rem}
+.meta{color:#9eabc5;font-size:.88rem}
+.tag{display:inline-block;background:#9b8cff1c;border:1px solid #9b8cff40;color:#c7bdff;border-radius:999px;padding:4px 10px;font-size:.76rem;font-weight:750;margin:3px 5px 3px 0}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.skill{border:1px solid #59d8e844;background:#59d8e80d;color:#b9f3f8;padding:8px 12px;border-radius:10px;font-size:.88rem;font-weight:700}
+.timeline{display:grid;gap:12px}
+.timeline .item{padding-left:22px}
+.note{font-size:.86rem;color:var(--muted)}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer{border-top:1px solid #ffffff16;color:#98a5bf;padding:25px 0;font-size:.88rem}
+@media(max-width:700px){.nav{align-items:flex-start;flex-direction:column;padding:13px 0}.nav nav{width:100%;padding-bottom:4px}.hero{padding:57px 0 45px}.grid{grid-template-columns:1fr}.card{padding:20px}.section-head{display:block}.section-head p{margin-top:4px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap nav">
+  <div class="brand">FAIS<span>.</span></div>
+  <nav aria-label="Navigasi utama">
+    <a href="#tentang">Profil</a><a href="#pendidikan">Pendidikan</a><a href="#pengalaman">Pengalaman</a><a href="#kompetensi">Keahlian</a><a href="#sertifikat">Sertifikat</a>
+  </nav>
+</div></div>
+<header class="hero"><div class="wrap">
+  <div class="kicker">Personal portfolio · Animal care</div>
+  <h1>Fais Anang<br><span class="gradient">Prasetya.</span></h1>
+  <p>Paramedis Klinik Hewan dengan latar belakang Agribisnis Ternak Ruminansia. Berfokus pada penanganan dan perawatan hewan, serta terus mengembangkan pengalaman di bidang kesehatan hewan.</p>
+  <div class="hero-actions">
+    <a class="btn primary" href="#pengalaman">Lihat Pengalaman <span aria-hidden="true">↗</span></a>
+    <a class="btn secondary" href="#kompetensi">Jelajahi Keahlian</a>
+  </div>
+  <div class="hero-meta">
+    <span class="pill"><b>2025</b> · Lulusan SMK Peternakan</span>
+    <span class="pill">Anjing & kucing</span>
+    <span class="pill">Animal handling</span>
+  </div>
+</div></header>
+<main class="wrap">
+ <section class="section" id="tentang">
+  <div class="section-head"><h2>Tentang Saya</h2><p>Kenali latar belakang dan minat profesional</p></div>
+  <div class="card">
+   <p>Saya memiliki latar belakang pendidikan di bidang peternakan, dengan program keahlian Agribisnis Ternak Ruminansia. Sejak 19 Desember 2025, saya bekerja di lingkungan klinik hewan dan mengembangkan pengalaman dalam penanganan pasien hewan kecil, khususnya anjing dan kucing.</p>
+   <p>Saya terus belajar melalui pengalaman praktik langsung serta arahan dokter hewan dan tenaga senior. Saya tertarik untuk terus mengembangkan pengetahuan dan keterampilan di bidang perawatan serta kesehatan hewan.</p>
+  </div>
+ </section>
+ <section class="section" id="pendidikan">
+  <div class="section-head"><h2>Riwayat Pendidikan</h2><p>Educational background</p></div>
+  <div class="grid">
+   <div class="item"><h3>SMK SPP Snakma Muhammadiyah</h3><div class="meta">Lulus 2025 · Jurusan Peternakan</div><p>Program Keahlian Agribisnis Ternak Ruminansia.</p></div>
+   <div class="item"><h3>SMP Muhammadiyah 62</h3><div class="meta">Pendidikan menengah pertama</div></div>
+   <div class="item"><h3>SDN 067093</h3><div class="meta">Pendidikan dasar</div></div>
+  </div>
+ </section>
+ <section class="section" id="pengalaman">
+  <div class="section-head"><h2>Pengalaman Kerja</h2><p>Professional experience</p></div>
+  <div class="card">
+   <div class="tag">19 Desember 2025 – sekarang</div>
+   <h3>Paramedis Klinik Hewan</h3>
+   <p>Pengalaman di lingkungan klinik hewan kecil, dengan pengembangan keterampilan melalui praktik langsung serta bimbingan dokter hewan dan tenaga senior.</p>
+  </div>
+ </section>
+ <section class="section" id="kompetensi">
+  <div class="section-head"><h2>Kompetensi</h2><p>Practical skills</p></div>
+  <div class="grid">
+   <div class="item"><h3>Animal Handling & Restraint</h3><p>Pengalaman menangani dan melakukan restrain hewan untuk membantu menjaga keamanan pasien dan petugas selama pemeriksaan atau perawatan.</p></div>
+   <div class="item"><h3>Pemberian Obat Oral</h3><p>Pengalaman memberikan obat melalui rute oral sesuai instruksi dan arahan dokter hewan.</p></div>
+  </div>
+  <div class="skills"><span class="skill">Animal handling</span><span class="skill">Restraint</span><span class="skill">Oral medication</span><span class="skill">Animal care</span></div>
+  <p class="note">Daftar ini hanya memuat keterampilan yang telah dikonfirmasi.</p>
+ </section>
+ <section class="section" id="sertifikat">
+  <div class="section-head"><h2>Sertifikat & Kegiatan</h2><p>Training · Internship · Competency</p></div>
+  <div class="grid">
+   <div class="item"><h3>Sertifikat Kompetensi Agribisnis Ternak Ruminansia</h3><div class="meta">2025 · Predikat Kompeten</div></div>
+   <div class="item"><h3>Ujian Kompetensi Beladiri Tapak Suci</h3><div class="meta">2025 · Predikat Baik</div></div>
+   <div class="item"><h3>Praktik Kerja Lapangan – Kanaya Farm</h3><div class="meta">19 Agustus–19 November 2024</div></div>
+   <div class="item"><h3>Magang – Alvino Farm Tuntungan</h3><div class="meta">1–29 Februari 2024</div></div>
+   <div class="item"><h3>Magang – Kandang 420</h3><div class="meta">1–30 Oktober 2023</div></div>
+   <div class="item"><h3>Magang – Kandang Ruminansia</h3><div class="meta">1–31 Juli 2023</div></div>
+   <div class="item"><h3>Benchmarking Study – Loka Pengujian Standar Instrumen Ruminansia Kecil</h3><div class="meta">18 Desember 2023</div></div>
+   <div class="item"><h3>Pelatihan Kader Dasar Taruna Melati I</h3><div class="meta">7–9 April 2023 · Dinyatakan lulus</div></div>
+   <div class="item"><h3>Praktik Kerja Lapangan – Asosiasi Peternak Kambing Perah Medan</h3><div class="meta">2023 · 60 hari · Hasil Sangat Baik</div></div>
+  </div>
+  <p class="note">Foto sertifikat dapat ditambahkan kemudian jika ingin ditampilkan secara publik.</p>
+ </section>
+ <section class="section" id="organisasi">
+  <div class="section-head"><h2>Pengalaman Organisasi</h2><p>Organization</p></div>
+  <div class="card"><h3>Ketua Bidang Advokasi – Pimpinan Ranting Ikatan Pelajar Muhammadiyah</h3><div class="meta">14 Januari 2023–13 Januari 2024</div></div>
+ </section>
+ <section class="section">
+  <div class="card contact"><div><h2>Terima kasih sudah berkunjung.</h2><p class="note">Informasi kontak profesional dapat ditambahkan apabila diperlukan. Data pribadi sensitif tidak dicantumkan untuk menjaga privasi.</p></div><span class="tag">Fais Anang Prasetya</span></div>
+ </section>
+</main>
+<footer><div class="wrap">© 2026 Fais Anang Prasetya <span style="color:#59d8e8">·</span> Personal Portfolio</div></footer>
+</body></html>
